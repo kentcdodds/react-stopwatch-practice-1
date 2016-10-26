@@ -1,7 +1,9 @@
-import React, {Component} from 'react'
-import {buttonStyles} from '../styles'
+import React, {Component, PropTypes} from 'react'
 
 class StopWatch extends Component {
+  propTypes = {
+    buttonStyles: PropTypes.object,
+  }
   state = {
     running: false,
     lapse: 0,
@@ -42,6 +44,7 @@ class StopWatch extends Component {
   }
 
   render() {
+    const {buttonStyles} = this.props
     return (
       <div style={{textAlign: 'center'}}>
         <label style={{fontSize: '5em', display: 'block'}} data-test="ms">{this.state.lapse}ms</label>
