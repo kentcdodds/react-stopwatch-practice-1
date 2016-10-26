@@ -31,6 +31,7 @@
   },
   "scripts": {
     "build": "babel --out-dir dist --ignore *.test.js src",
+    "release": "npm run cover",
     "test": "jest",
     "cover": "npm test -- --coverage",
     "watch:test": "npm test -- --watch"
@@ -41,5 +42,15 @@
       "stage-2",
       "react"
     ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
   }
 }
