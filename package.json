@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Don't use this. It's just for demo purposes",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "repository": {
     "url": "git@github.com:kentcdodds/react-stopwatch.git",
     "type": "git"
