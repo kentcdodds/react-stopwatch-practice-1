@@ -1,0 +1,15 @@
+{
+  "name": "@kentcdodds/react-stopwatch-practice-1",
+  "version": "1.0.0",
+  "description": "Don't use this. It's just for demo purposes",
+  "main": "dist/index.js",
+  "repository": {
+    "url": "git@github.com:kentcdodds/react-stopwatch.git",
+    "type": "git"
+  },
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^15 || ^15.4.0-rc.1"
+  }
+}
