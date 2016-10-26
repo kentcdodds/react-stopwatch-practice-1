@@ -1,0 +1,49 @@
+exports[`test initial state 1`] = `
+<StopWatch>
+  <div
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }>
+    <label
+      data-test="ms"
+      style={
+        Object {
+          "display": "block",
+          "fontSize": "5em",
+        }
+      } />
+    <button
+      data-test="toggle"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #ccc",
+          "fontSize": "2em",
+          "margin": "0 5px",
+          "padding": "15px",
+          "width": "200px",
+        }
+      }>
+      Start
+    </button>
+    <button
+      data-test="clear"
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "#fff",
+          "border": "1px solid #ccc",
+          "fontSize": "2em",
+          "margin": "0 5px",
+          "padding": "15px",
+          "width": "200px",
+        }
+      }>
+      Clear
+    </button>
+  </div>
+</StopWatch>
+`;
