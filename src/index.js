@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react'
 
 class StopWatch extends Component {
-  propTypes = {
+  static propTypes = {
     buttonStyles: PropTypes.object,
   }
   state = {

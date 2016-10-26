@@ -1,5 +1,10 @@
 exports[`test initial state 1`] = `
-<StopWatch>
+<StopWatch
+  buttonStyles={
+    Object {
+      "fontSize": "2em",
+    }
+  }>
   <div
     style={
       Object {
@@ -19,12 +24,7 @@ exports[`test initial state 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#fff",
-          "border": "1px solid #ccc",
           "fontSize": "2em",
-          "margin": "0 5px",
-          "padding": "15px",
-          "width": "200px",
         }
       }>
       Start
@@ -34,12 +34,7 @@ exports[`test initial state 1`] = `
       onClick={[Function]}
       style={
         Object {
-          "background": "#fff",
-          "border": "1px solid #ccc",
           "fontSize": "2em",
-          "margin": "0 5px",
-          "padding": "15px",
-          "width": "200px",
         }
       }>
       Clear

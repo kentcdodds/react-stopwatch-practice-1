@@ -6,11 +6,11 @@ import StopWatch from './index'
 jest.useFakeTimers()
 
 test('initial state', () => {
-  expect(mountToJson(mount(<StopWatch />))).toMatchSnapshot()
+  expect(mountToJson(mount(<StopWatch buttonStyles={{fontSize: '2em'}} />))).toMatchSnapshot()
 })
 
 test('full interaction', () => {
-  const wrapper = mount(<StopWatch />)
+  const wrapper = mount(<StopWatch buttonStyles={{fontSize: '2em'}} />)
   const toggle = getToggle(wrapper)
   // initial state
   expect(toggle.text()).toBe('Start')
