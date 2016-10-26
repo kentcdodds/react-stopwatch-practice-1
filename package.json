@@ -28,6 +28,7 @@
     "eslint": "^3.8.1",
     "eslint-config-kentcdodds": "^10.1.0",
     "jest-cli": "^16.0.2",
+    "npm-run-all": "^3.1.1",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.2"
@@ -37,7 +38,8 @@
     "lint": "eslint src",
     "test": "jest",
     "cover": "npm test -- --coverage",
-    "watch:test": "npm test -- --watch"
+    "watch:test": "npm test -- --watch",
+    "prepublish": "npm-run-all --parallel lint cover build"
   },
   "babel": {
     "presets": [
