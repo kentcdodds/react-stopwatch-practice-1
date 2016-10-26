@@ -47,9 +47,26 @@ class StopWatch extends Component {
     const {buttonStyles} = this.props
     return (
       <div style={{textAlign: 'center'}}>
-        <label style={{fontSize: '5em', display: 'block'}} data-test="ms">{this.state.lapse}ms</label>
-        <button style={buttonStyles} onClick={this.handleRunClick} data-test="toggle">{this.state.running ? 'Stop' : 'Start'}</button>
-        <button style={buttonStyles} onClick={this.handleClearClick} data-test="clear">Clear</button>
+        <label
+          style={{fontSize: '5em', display: 'block'}}
+          data-test="ms"
+        >
+          {this.state.lapse}ms
+        </label>
+        <button
+          style={buttonStyles}
+          onClick={this.handleRunClick}
+          data-test="toggle"
+        >
+          {this.state.running ? 'Stop' : 'Start'}
+        </button>
+        <button
+          style={buttonStyles}
+          onClick={this.handleClearClick}
+          data-test="clear"
+        >
+          Clear
+        </button>
       </div>
     )
   }

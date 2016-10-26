@@ -18,12 +18,15 @@
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.0",
+    "babel-eslint": "^7.0.0",
     "babel-jest": "^16.0.0",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.18.0",
     "enzyme": "^2.5.1",
     "enzyme-to-json": "^1.1.5",
+    "eslint": "^3.8.1",
+    "eslint-config-kentcdodds": "^10.1.0",
     "jest-cli": "^16.0.2",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
@@ -31,7 +34,7 @@
   },
   "scripts": {
     "build": "babel --out-dir dist --ignore *.test.js src",
-    "release": "npm run cover",
+    "lint": "eslint src",
     "test": "jest",
     "cover": "npm test -- --coverage",
     "watch:test": "npm test -- --watch"
@@ -51,6 +54,16 @@
         "lines": 100,
         "statements": 100
       }
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "kentcdodds",
+      "kentcdodds/jest",
+      "kentcdodds/react"
+    ],
+    "rules": {
+      "no-invalid-this": "off"
     }
   }
 }
